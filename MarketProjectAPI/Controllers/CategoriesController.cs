@@ -59,7 +59,7 @@ namespace MarketProjectAPI.Controllers
         public async Task<IActionResult> CreateCategory([FromForm]CreateCategoryDto model)
         {
             if (model == null) 
-                return BadRequest("Birşeyler ters gitti");
+                return BadRequest("Birşeyler ters gitti.");
 
             if (await _categoryRepo.AnyAsync(x=> x.Name == model.Name))
                 return BadRequest("Bu isimde kayıt var tekrar dene");
