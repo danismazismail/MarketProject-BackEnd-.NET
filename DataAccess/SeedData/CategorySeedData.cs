@@ -29,6 +29,8 @@ namespace DataAccess.SeedData
                         Description = "Kahvaltılık ürünler bulunur"
                     }
                 );
+
+            
         }
     }
 }

@@ -105,6 +105,7 @@ namespace MarketProjectAPI.Controllers
 
             await _categoryRepo.DeleteAsync(category);
             return Ok($"Kategori silinmiştir. \n{category.Name}");
+                       
         }
     }
 }

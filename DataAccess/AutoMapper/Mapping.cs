@@ -1,4 +1,5 @@
 ﻿using ApplicationCore.Dtos.Categories;
+using ApplicationCore.Dtos.Products;
 using ApplicationCore.Entities.Concrete;
 using AutoMapper;
 using System;
@@ -16,6 +17,14 @@ namespace DataAccess.AutoMapper
             CreateMap<Category,GetCategortDto>().ReverseMap();
             CreateMap<Category,CreateCategoryDto>().ReverseMap();
             CreateMap<Category,UpdateCategoryDto>().ReverseMap();
+
+
+            CreateMap<Product, GetProductDto>().ReverseMap();
+            CreateMap<Product, CreateProductDto>().ReverseMap();
+            CreateMap<Product, UpdateProductDto>().ReverseMap();
+
+
+            
 
         }
     }

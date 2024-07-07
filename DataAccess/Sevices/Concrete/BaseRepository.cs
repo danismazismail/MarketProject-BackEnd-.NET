@@ -54,7 +54,7 @@ namespace DataAccess.Sevices.Concrete
 
         public async Task<T> GetByIdAsync(int Id)
             => await _table.FirstOrDefaultAsync(x => x.Status != Status.Passive && x.Id == Id);
-
+                
         public async Task<List<TResault>> GetFiltredListAsync<TResault>(Expression<Func<T, TResault>> select, Expression<Func<T, bool>> where = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, Func<IQueryable<T>, IIncludableQueryable<T, object>> join = null)
         {
             IQueryable<T> query = _table;
